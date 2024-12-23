@@ -1,0 +1,15 @@
+.app {
+  padding: 0 16px;
+  width: 90%;
+  //background-color: white;
+  @media (min-width: 768px) {
+    margin: 0 36px;
+  }
+}
+#root {
+  display: flex;
+  justify-content: center;
+}
+// body {
+//   //background-color: #e5e5e5;
+// }

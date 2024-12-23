@@ -1,0 +1,12 @@
+.menu {
+  justify-content: center;
+  &__item {
+    &::after {
+      inset-inline: 0px !important;
+    }
+  }
+}
+.header {
+  display: flex;
+  justify-content: center;
+}
