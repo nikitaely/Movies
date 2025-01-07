@@ -10,7 +10,14 @@ export default class App extends Component {
     title: null,
     active: 'search',
     searchQuery: '',
+    online: true,
   };
+
+  setOnline = (bool) => {
+    this.setState(() => {
+      return { online: bool }
+    })
+  }
 
   setActive = (e) => {
     this.setState(() => {
@@ -26,7 +33,7 @@ export default class App extends Component {
       <div className="app">
         <Header setActive={this.setActive} active={this.state.active}></Header>
         <Searchbar search={this.search} active={this.state.active}/>
-        <CardList active={this.state.active} searchQuery={this.state.searchQuery} />
+        <CardList active={this.state.active} searchQuery={this.state.searchQuery} online={this.state.online} setOnline={this.setOnline}/>
       </div>
     );
   }
