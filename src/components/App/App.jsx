@@ -25,7 +25,7 @@ export default class App extends Component {
     return (
       <div className="app">
         <Header setActive={this.setActive} active={this.state.active}></Header>
-        <Searchbar search={this.search} />
+        <Searchbar search={this.search} active={this.state.active}/>
         <CardList active={this.state.active} searchQuery={this.state.searchQuery} />
       </div>
     );
